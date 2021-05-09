@@ -7,7 +7,7 @@ import { Button } from 'react-bootstrap';
 
 //frontend app uses localhost:3000 by default.
 //The app will allow the user to display all game data.
-//The suer will be able to enter new game information using a form
+//The user will be able to enter new game information using a form
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -75,7 +75,7 @@ class App extends React.Component {
                 <h2>{game.platform}</h2>
                 <h3>{game.game}</h3>
                 <h4>{game.genre}</h4>
-                <p>Level {game.stars} on {game.date}</p>
+                <p>Level {game.stars}</p>
                 <Button onClick={() => this.handleDelete(game._id)}>Delete</Button>
               </Carousel.Caption>
             </Carousel.Item>
